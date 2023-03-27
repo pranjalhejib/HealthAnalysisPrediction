@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <meta name="google-site-verification" content="iy6FyGpYh9LOjk-xMM3E0Wk2Ay6cGRGEY6IRbny6xB8" />
+    <meta property="fb:pages" content="149158061793615" />
+    <meta name="theme-color" content="#4353ff" />
+    <title>Heart Disease Prediction</title>
+    <!-- Icons-->
+    <link rel="icon" type="image/ico" href="./../static/img/h1.jpg" sizes="any" />
+    <link href="../static/node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="../static/node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="../static/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+
+  </head>
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <style>
+  /* html,body {
+      overflow-x: hidden;
+  } */
+  .css-1s8q1mb {
+      bottom: 50px !important;
+      right: 10px !important;
+  }
+
+  .w-container {
+      max-width: 1170px;
+  }
+  body {
+       /*background-image: url(..static/img/h2.jpg);*/
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+  }
+
+  #BeaconContainer-root .c-Link { color: #4353FF !important; }
+
+  .footer-link,
+  .footer-heading {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+  }
+  .float-label {
+     color: white !important;
+  }
+
+  ::selection {
+    background: rgb(67, 83, 255); /* Bright Blue */
+    color: white;
+  }
+
+  ::-moz-selection {
+    background: rgb(67, 83, 255); /* Bright Blue */
+    color: white;
+  }
+
+  .button {
+    outline: none;
+  }
+  @media (max-width: 479px) {
+    .chart__category h5, .chart__column h5 {
+        font-size: 12px !important;
+    }
+  }
+  .chart__category div, .chart__column div {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  #consent-container > div > div {
+      background-color: #262626 !important;
+      border-radius: 0px !important;
+  }
+  .css-7066so-Root {
+    max-height: calc(100vh - 140px) !important;
+  }
+</style>
+
+    <header style="text-align: center" class="app-header navbar">
+         <h1 style="text-align: center">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <img src="../static/img/heart.png" width=50 height="50" />
+         Heart Disease Prediction using Machine Learning
+        <img src="../static/img/heart.png" width=50 height="50" />
+        </h1>
+    </header>
+    <div class="app-body">
+      <div class="sidebar">
+
+        {% include 'sidebar.html' %}
+      </div>
+
+      <main class="main">
+
+          <section>
+      <h3 style="text-align: center">
+              Predictions
+          </h3>
+        <div style="margin-top:30px;margin-left:50px; width:1200px;height:600px;background-color: pink; opacity:0.2; background:url(../static/img/h8.jpg) no-repeat;">
+        </div>
+          <!--<img src="../static/img/h1.jpg" height=50% width=100%> !-->
+          <div style="margin-top:-600px">
+          <h4 style="margin-left: 80px;color:red; text-align: center">
+            <b>Predictions made by Random Forest on possible Heart Attacks </b><h4>
+              <br> <br>
+              <div style="width:800px;height:300px;margin-left: 200px;">
+                    <input type="text" name="name" />
+                    <input type="submit" value="submit" />
+              </div>  
+         </div>
+
+      
+</section>
+      </main>
+    </div>
+    <footer class="app-footer">
+
+      <div class="ml-auto">
+    </footer>
+    <!-- HDP and necessary plugins-->
+    <script src="../static/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../static/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../static/node_modules/pace-progress/pace.min.js"></script>
+    <script src="../static/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="../static/node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="../static/node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="../static/node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+    <script src="../static/js/main.js"></script>
+  </body>
+</html>
