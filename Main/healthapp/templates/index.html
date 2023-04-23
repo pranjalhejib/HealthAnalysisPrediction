@@ -10,11 +10,17 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="static/assets/img/favicon.png" rel="icon">
-  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="static/assets/img/favicon.ico" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  {% comment %} <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet"> {% endcomment %}
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -30,55 +36,87 @@
   <link href="static/assets/css/style.css" rel="stylesheet">
 
 </head>
+<style>
+  body{
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
 
-<body>
+  }
+  h4,h1,h2{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: ;
+  }
+</style>
+
+<body style="background-color: #DCE9F1;">
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+  <header id="header" class="fixed-top text-center">
+    <div class="container d-flex align-items-center text-center">
 
-      <h1 class="logo me-auto"><a href="#">Health Care using Data Science</a></h1>
+      <h1 class="logo me-auto text-center"><a class="" href="#">Analysis and Prediction of Common Health Issues using
+          Machine
+          Learning</a>
+      </h1>
+
     </div>
+
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
-      <h2 style="font-size: 40px;">Health Care using Data Science</h2>
-      <h2></h2>
-      <a href="#about" class="btn-get-started scrollto">Synopsis</a>
+      <h2 style="font-size: 2rem;"><b>Meticulous Analysis & Prediction<br>of Common Health Issues</b></h2>
+      <br>
+      {% comment %} <a href="#about" class="btn-get-started scrollto">Project Report</a> {% endcomment %}
+      <a title="Download Project Report" type="submit"
+        href="https://drive.google.com/file/d/1vLsvpjeeDKudm5eG6EHgXeSDFDabW45_/view?usp=sharing" download>
+        <button type="button" class="btn btn-outline-info"
+          style="border-color: darkblue; color:black; background-color: ;">
+          <b><i class="fa-solid fa-download me-2"></i>PROJECT REPORT</b></button>
+
+      </a><br><br>
     </div>
-  </section><!-- End Hero -->
+  </section><!-- End Here -->
 
   <main id="main">
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
-      <div class="container" style="margin-top: -100px">
+      <div class="container" style="margin-top: -100px;">
 
-        <div class="row">
-          
+        <div class="row" style="margin-left:0px;">
+
           <div class="col-lg-30 d-flex align-items-stretch">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
                 <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-5 mt-xl-0" style="height:280px">
+                  <div class="icon-box mt-5 mt-xl-0" style="height:280px;">
                     <i class="bx bx-receipt"></i>
-                    <h4><a href="{% url 'heartApp' %}">Heart Attack Detection & Prediction</a></h4>
-                    <p><img style="margin-top:-20px" src="static/assets/img/heart.jpg" height="100" width="100" alt="No Image" /></p>
+                    <a href="{% url 'heartApp' %}">
+                      <h4>Heart Attack Detection & Prediction</h4>
+                      <p><img style="margin-top:-20px" src="static/assets/img/heart.jpg" height="100" width="100"
+                          alt="heart" /></p>
+                    </a>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-5 mt-xl-0" style="height:280px">
                     <i class="bx bx-cube-alt"></i>
-                    <h4><a href="{% url 'diabetesApp' %}">Diabetes Detection & Prediction</a></h4>
-                    <p><img style="margin-top:-20px" src="static/assets/img/diabetes.jpg" height="120" width="200" alt="No Image" /></p>
+                    <a href="{% url 'diabetesApp' %}">
+                      <h4>Diabetes Detection & Prediction</h4>
+                      <p><img style="margin-top:-20px" src="static/assets/img/diabetes.jpg" height="110" width="200"
+                          alt="diabetes" /></p>
+                    </a>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-5 mt-xl-0" style="height:280px">
                     <i class="bx bx-images"></i>
-                    <h4><a href="{% url 'lungsApp' %}">Lung Cancer Detection & Prediction</a></h4>
-                    <p><img style="margin-top:-20px" src="static/assets/img/lungs.jpg" height="100" width="200" alt="No Image" /></p>
+                    <a href="{% url 'lungsApp' %}">
+                      <h4>Lung Cancer Detection & Prediction</h4>
+                      <p><img style="margin-top:-20px" src="static/assets/img/lungs.jpg" height="100" width="200"
+                          alt="lung" /></p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -86,15 +124,39 @@
           </div>
         </div>
 
+        
+
+
+      </div>
+      <br><br>
+      <div class="py-3 bg-light rounded-3" style="margin-left: 150px; margin-right: 130px;">
+        <div class="container-fluid text-center">
+          <a href="about" title="Know Our Team">
+            <button type="button" class="btn btn-outline-info"
+              style="border-color: black; color:black; background-color: ; font-size: 1.25rem;">
+              <b><i class="fa-solid fa-people-group me-2"></i>ABOUT US</b>
+            </button>
+          </a>
+        </div>
       </div>
     </section><!-- End Why Us Section -->
 
-   
-
   </main><!-- End #main -->
-
   <!-- ======= Footer ======= -->
- 
+  <footer class="mb-3" style="background-color: #DCE9F1;">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <span>Guided by</span>
+          <a href="">Dr. R. R. Karwa</a><br>
+          <p>&copy; 2023 PRMIT&R. All rights reserved.</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
   <!-- Vendor JS Files -->
   <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
