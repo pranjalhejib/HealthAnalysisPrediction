@@ -1,6 +1,6 @@
 # **Project Title**: *ANALYSIS AND PREDICTION OF COMMON HEALTH   ISSUES USING MACHINE LEARNING*
 
-# **Project Description**:-
+## **Description**:-
 ### This project uses machine learning techniques to predict and analyze common health issues such as heart attack, diabetes, and lung cancer. The team analyzed respective datasets and trained machine learning models to provide accurate predictions. The goal of the project is to assist medical practitioners and diagnostic centers in accurate disease prediction. Users can input attribute values for heart and diabetes disease predictions, and upload lung images in JPEG or PNG format for lung cancer prediction. This project has the potential to improve healthcare outcomes and contribute to a better quality of life for patients.
   
 # **Data Collection/Datasets:--**  
