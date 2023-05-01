@@ -106,23 +106,8 @@ The dashboard of the diabetes prediction page provides a comprehensive overview 
 ![](Aspose.Words.3c2b0e50-8256-4332-9f0e-ee3e4059c738.008.jpeg)
 
 The lung disease prediction result displayed alongside the image provides information about the likelihood of a patient having a lung disease based on the image input.
-## **Credits:**
-### ` `This project was developed as part of B.E Final Year Project.
-
-
-![](Aspose.Words.3c2b0e50-8256-4332-9f0e-ee3e4059c738.009.png)
-
-
-![](Aspose.Words.3c2b0e50-8256-4332-9f0e-ee3e4059c738.010.png)
 
 
 
 
 
-## **Acknowledgement:**
-
-With great pleasure we hereby acknowledge the help given to us by various individuals throughout the process. This is an acknowledgement to the inspiration, drive and technical assistance contributed by many individuals. This report would have never seen the light of this day without the help and guidance which we have received.
-
-We would like to express our profound thanks to Dr. R. R. Karwa for their guidance and constant supervision as well as for providing necessary information regarding the project report. We would also like to thanks Dr. M. A. Pund, Head, Department of Computer Science & Engineering and Dr. G. R. Bamnote, Principal, PRMIT&R for their kind co-operation and encouragement which helped us in completion of this report. We owe an incalculable debt to all staffs of the Department of Computer Science & Engineering for their direct and indirect help. 
-
-We extend our heartfelt thanks to our parents, friends and well-wishers for their support and timely help. Last but not the least; We will thank the God Almighty for guiding us in every step of the way.
